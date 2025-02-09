@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         let zoomAmount = e.deltaY > 0 ? -0.1 : 0.1;
         scale += zoomAmount;
-        scale = Math.max(1, Math.min(scale, 3)); // Limit zoom between 1x and 3x
+        scale = Math.max(1, Math.min(scale, 4)); // Limit zoom between 1x and 4x
         map.style.transform = `scale(${scale}) translate(${originX}px, ${originY}px)`;
     });
 
