@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilott Academy</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="public/scripts/auth.js" defer></script>
 </head>
 <body>
     <header>
         <img src="public/images/logo.png" alt="Pilott Academy Logo">
         <h1>Welcome to Pilott Academy</h1>
-        <button id="loginBtn">Login with Discord</button>
-        <a href="https://discord.gg/jTs9nWGbh8" class="discord-btn">Join Our Discord</a>
+        <button onclick="loginWithDiscord()">Login with Discord</button>
+        <a href="https://discord.gg/jTs9nWGbh8">
+            <button>Join Our Discord</button>
+        </a>
     </header>
 
     <section id="about">
-        <h2>Improve and go PRO</h2
+        <h2>🚀 Learn to Go Pro</h2>
         <p>Join our courses to master the game and become a professional player.</p>
     </section>
 
     <section id="pricing">
-        <h2>Subscription</h2>
+        <h2>💰 Subscription</h2>
         <p>Access all courses for <strong>$4.99/month</strong></p>
-        <button id="subscribeBtn">Subscribe Now</button>
+        <a href="views/pricing.html">
+            <button>Subscribe Now</button>
+        </a>
     </section>
 </body>
 </html>
