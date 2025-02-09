@@ -1,20 +1,9 @@
-/* General Styles */
-body {
-    background-color: #0f0f0f;
-    color: white;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navigation Bar */
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 15px 30px; /* Slightly larger for better spacing */
     background-color: rgba(20, 20, 20, 0.9);
     backdrop-filter: blur(10px);
     position: fixed;
@@ -22,19 +11,20 @@ nav {
     top: 0;
     left: 0;
     transition: top 0.3s ease-in-out;
+    z-index: 1000; /* Ensures navbar stays above everything */
 }
 
-/* Smaller Logo */
+/* Navbar Logo */
 .logo {
-    width: 80px; /* Reduced size */
+    width: 80px; /* Keeps the logo small */
     height: auto;
 }
 
-/* Navigation Links */
+/* Navbar Links */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px; /* Increased spacing between links */
 }
 
 nav ul li {
@@ -42,95 +32,13 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 1.2rem; /* Bigger text */
+    font-weight: bold;
     color: white;
     text-decoration: none;
-    font-weight: 600;
     transition: 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #8A2BE2;
-}
-
-/* Map Section */
-.map-section {
-    padding: 40px;
-    background-color: #121212;
-    border-radius: 10px;
-    margin-top: 70px; /* Adjusted to fit under navbar */
-}
-
-/* Map Container */
-.map-container {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 2px solid #8A2BE2;
-    position: relative;
-    cursor: grab;
-}
-
-/* Map Image */
-.map-container img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.2s ease-in-out;
-    user-select: none;
-    transform-origin: center;
-}
-
-/* Purple Rounded Buttons */
-button {
-    background: linear-gradient(90deg, #8A2BE2, #6A0DAD);
-    color: white;
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(138, 43, 226, 0.5);
-}
-
-/* Button Hover Effect */
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(138, 43, 226, 0.8);
-}
-
-/* Pricing Section */
-.pricing-section {
-    padding: 40px;
-    background-color: #121212;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 40px auto;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 15px;
-    border: 1px solid #8A2BE2;
-}
-
-th {
-    background-color: #8A2BE2;
-    color: white;
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: #0a0a0a;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #b3b3b3;
 }
