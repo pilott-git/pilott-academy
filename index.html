@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilott Academy</title>
     <link rel="stylesheet" href="style.css">
-    <script src="public/scripts/auth.js" defer></script>
 </head>
 <body>
-    <header>
+
+    <!-- Navigation Bar -->
+    <nav>
         <img src="public/images/logo.png" alt="Pilott Academy Logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#map">Interactive Map</a></li>
+            <li><a href="views/pricing.html">Pricing</a></li>
+            <li><a href="views/courses.html">Courses</a></li>
+            <li><a href="https://discord.gg/YOUR_SERVER_LINK">Discord</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <h1>Welcome to Pilott Academy</h1>
+        <p>The #1 Academy for Competitive Players</p>
         <button onclick="loginWithDiscord()">Login with Discord</button>
-        <a href="https://discord.gg/jTs9nWGbh8">
-            <button>Join Our Discord</button>
-        </a>
-    </header>
-
-    <section id="about">
-        <h2>🚀 Learn to Go Pro</h2>
-        <p>Join our courses to master the game and become a professional player.</p>
     </section>
 
-    <section id="pricing">
-        <h2>💰 Subscription</h2>
-        <p>Access all courses for <strong>$4.99/month</strong></p>
-        <a href="views/pricing.html">
-            <button>Subscribe Now</button>
-        </a>
+    <!-- Interactive Map Section -->
+    <section class="map-section" id="map">
+        <h2>🗺️ Interactive Map</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed/v1/view?key=YOUR_GOOGLE_MAPS_API_KEY&center=37.7749,-122.4194&zoom=10" width="100%" height="500px"></iframe>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Pilott Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="public/scripts/auth.js"></script>
 </body>
 </html>
