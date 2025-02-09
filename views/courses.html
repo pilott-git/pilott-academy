@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Pilott Academy</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Available Courses</h1>
+    </header>
+
+    <section id="courses">
+        <h2>🔥 Unlock Your Potential</h2>
+        <ul id="courseList">
+            <p>Loading courses...</p>
+        </ul>
+    </section>
+
+    <script>
+        if (!sessionStorage.getItem("loggedInUser")) {
+            alert("You must log in to access courses.");
+            window.location.href = "/views/login.html";
+        } else {
+            document.getElementById("courseList").innerHTML = `
+                <li>🚀 Pro Flight Training</li>
+                <li>🎯 Advanced Tactics</li>
+                <li>🛠 Team Strategies</li>
+            `;
+        }
+    </script>
+</body>
+</html>
 
