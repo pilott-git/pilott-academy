@@ -9,33 +9,31 @@
 </head>
 <body>
 
-    <!-- Navigation Bar (Smaller) -->
-    <nav>
+    <!-- Navigation Bar (Auto Hide on Scroll) -->
+    <nav id="navbar">
         <img src="public/images/ed9b1b25cb415e62fd18f756c3c5eecb.jpeg" alt="Pilott Academy Logo">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#pricing">Pricing</a></li>
             <li><a href="#map">Interactive Map</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#pricing">Pricing</a></li>
             <li><a href="https://discord.gg/jTs9nWGbh8">Discord</a></li>
         </ul>
     </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h1>Pilott Academy</h1>
-        <p>The #1 Academy for Competitive Fortnite Players</p>
-        <button onclick="loginWithDiscord()">Login with Discord</button>
-    </section>
-
 
     <!-- Interactive Map Section -->
     <section class="map-section" id="map">
         <h2>🗺️ Fortnite Chapter 6 Season 1 Interactive Map</h2>
         <div class="map-container">
-            <img id="fortnite-map" src="https://scontent-ord5-3.cdninstagram.com/v/t51.29350-15/468101137_1227395365009030_8041902867187714930_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=scontent-ord5-3.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2AFKjuKIeNDsfKk0bHzkTXc9Exz6BA-5HVcNJcnc3o-7bZX9R97Mc4_4RT19m9tH-_SgV7fordVxutKiBl1ZaRBg&_nc_ohc=XBzHGTZ62ksQ7kNvgEkD6Mh&_nc_gid=2cc2bcaa4a324a048008cd0ed2d410d9&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzUxMzA3NDQ3NDk5NDUxNjI0NA%3D%3D.3-ccb7-5&oh=00_AYBYb7KsX-Ja5WpbGYuFo_cxBAHi0D-tc-YNoLmAl9g6iw&oe=67AEF194&_nc_sid=10d13b" alt="Fortnite Chapter 6 Season 1 Map">
+            <img id="fortnite-map" src="public/images/map.jpeg" alt="Fortnite Map">
         </div>
     </section>
-   
+
+    <!-- Login Section -->
+    <section class="login-section" id="login">
+        <h2>🔑 Login to Access Courses</h2>
+        <button onclick="loginWithDiscord()">Login with Discord</button>
+    </section>
+
     <!-- Pricing Section -->
     <section class="pricing-section" id="pricing">
         <h2>💰 Pricing</h2>
@@ -58,5 +56,6 @@
 
     <script src="public/scripts/auth.js"></script>
     <script src="public/scripts/map.js"></script>
+    <script src="public/scripts/navbar.js"></script>
 </body>
 </html>
