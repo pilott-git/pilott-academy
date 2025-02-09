@@ -1,31 +1,32 @@
-/* Map Section Styling */
+/* Map Section */
 .map-section {
     text-align: center;
     padding: 40px;
     background-color: #121212;
     border-radius: 10px;
-    margin: 40px auto;
-    max-width: 90%;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    margin-top: 70px;
+    position: relative; /* Prevents map from overlapping */
+    z-index: 1;
 }
 
 /* Map Container */
 .map-container {
     width: 100%;
-    height: 700px; /* Keeps map large */
-    margin: auto;
+    height: 600px;
     overflow: hidden;
     border-radius: 10px;
-    border: 2px solid #6a11cb;
+    border: 2px solid #8A2BE2;
     position: relative;
     cursor: grab;
 }
 
-/* Fortnite Map Image */
+/* Map Image */
 .map-container img {
-    width: 200%;
+    width: 100%;
     height: auto;
     transition: transform 0.2s ease-in-out;
     user-select: none;
     transform-origin: center;
+    position: relative;
+    z-index: 1; /* Keeps it below other elements */
 }
